@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Delete Page </title>
+
+</head>  
+<body>  
+    <link rel="stylesheet" href="/static/style.css" />
+<h1 style="margin-bottom: 20px;background: var(--yellow-color);padding-top: 10px;padding-left: 10px;padding-bottom: 10px;padding-right: 10px;margin-left: -10px;margin-right: -10px;margin-top: -10px;font-style: inherit;"> DELETE DATA ENTRY PAGE </h1>
+<a href="https://nothing-but-scrap.herokuapp.com/" style="left: 0px;padding-top: 20px;padding-bottom: 20px;top: 5px;">Back to Main</a>  
+     
+    
+        <br>
+<br>
+<br>
+        <form action="/delete_DT" method="POST"> 
+            
+            <h2>Disease Type</h2>
+            <label>DiseaseType id : </label> 
+            <input name="DT_id">
+            
+            <button class="btn" type="submit">Delete DiseaseType</button> 
+        </form>  
+ 
+        <br>
+        <form action="/delete_Country" method="POST"> 
+
+            <h2>Country</h2>
+            <label>Country name : </label> 
+            <input name="C_cname">
+
+            <button class="btn" type="submit">Delete Country</button> 
+        </form>  
+ 
+        <br>
+        <form action="/delete_Disease" method="POST"> 
+
+            <h2>Disease</h2>
+            <label>Disease code : </label> 
+            <input name="Disease_code">
+            
+            <button class="btn" type="submit">Delete Disease</button> 
+            
+        </form>  
+ 
+        <br>
+        <form action="/delete_Discover" method="POST"> 
+
+            <h2>Discover</h2>
+            <label>Country : </label> 
+            <input name="Discover_cname">
+            
+            <label>Disease code : </label> 
+            <input name="Discover_disease_code">
+            
+            <button class="btn" type="submit">Delete Discover</button> 
+        </form> 
+ 
+        <br>
+        <form action="/delete_Users" method="POST"> 
+
+            <h2>Users</h2>
+            <label>Email : </label> 
+            <input type="email" name="U_email">
+            
+            <button class="btn" type="submit">Delete User</button> 
+        </form>  
+ 
+        <br>
+        <form action="/delete_PS" method="POST"> 
+
+            <h2>Public Servant</h2>
+            <label>Email : </label> 
+            <input type="email" name="PS_email">
+
+            <button class="btn" type="submit">Delete PublicServant</button> 
+        </form>  
+ 
+        <br>
+        <form action="/delete_Doctor" method="POST"> 
+
+            <h2>Doctor</h2>
+            <label>Email : </label> 
+            <input type="email" name="Doctor_email">
+
+            <button class="btn" type="submit">Delete Doctor</button> 
+        </form>  
+
+ 
+        <br>
+        <form action="/delete_Record" method="POST"> 
+
+            <h2>Record</h2>
+            <label>Email : </label> 
+            <input type="email" name="Record_email">
+            
+            <label>Country : </label> 
+            <input name="Record_cname">
+
+            <label>Disease code : </label> 
+            <input name="Record_disease_code">
+            <button class="btn" type="submit">Delete Record</button> 
+        </form>
+
+        <br>
+   
+</body></html>

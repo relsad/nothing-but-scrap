@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Control panel </title>
+    
+    </head>  
+<body>  
+    <link rel="stylesheet" href="/static/style.css" />
+    <h1 style="margin-bottom: 20px;background: var(--yellow-color);padding-top: 10px;padding-left: 10px;padding-bottom: 10px;padding-right: 10px;margin-left: -10px;margin-right: -10px;margin-top: -10px;font-style: inherit;">DB control panel </h1> 
+         
+        <br>
+        <form action="/create"> 
+            <button type="submit" class="btn">
+                <span class="btn_content">CREATE</span>
+            </button> 
+        </form>
+ 
+        <br>
+        <form action="/read"> 
+            <button type="submit" class="btn">
+                <span class="btn_content">READ</span>
+            </button> 
+        </form> 
+ 
+        <br>
+        <form action="/update"> 
+            <button type="submit" class="btn">
+                <span class="btn_content">UPDATE</span>
+            </button>
+        </form> 
+ 
+        <br>
+        <form action="/delete"> 
+            <button type="submit" class="btn">
+                <span class="btn_content">DELETE</span>
+            </button>
+        </form>
+   
+</body>
+</html>

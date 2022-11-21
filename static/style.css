@@ -1,0 +1,154 @@
+table {
+  border-spacing: 1;
+  border: 1px;
+  border-color: black;
+  margin: 1rem;
+  background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  padding: 8px;
+}
+body {
+	font-family: Tomorrow, sans-serif;
+	font-size: 14px;
+	background: var(--red-color);
+}
+
+form {
+  max-width: 300px;
+  /*! margin: 10px auto; */
+  padding: 10px 20px;
+  background: var(--yellow-color);
+  border-radius: 10px;
+  
+}
+
+h2{
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+a {
+  justify-content: center;
+  padding: 19px 39px 18px 39px;
+  color: var(--black-color);
+  background-color: var(--yellow-color);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid var(--black-color);
+  border-width: 1px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input,
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 93%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+
+  width: 100%;
+}
+
+button {
+  /*! padding: 19px 39px 18px 39px; */
+  /*! color: #FFF; */
+  /*! background-color: #f00; */
+  /*! font-size: 18px; */
+  /*! text-align: center; */
+  /*! font-style: normal; */
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid var(--black-color);
+  border-width: 5px;
+  /*! box-shadow: 0 -1px 0 rgba(255, 255, 255, 0) inset; */
+  /*! margin-bottom: 10px; */
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+:root {
+  --yellow-color: #fcee09; 
+  --red-color: #ff003c;
+  --black-color: #050a0e;
+  --blue-color: #00f0ff;
+}
+
+.btn {
+  width: 230px;
+  height: 60px; 
+  /*! border: var(--black-color); */
+  /*! outline: var(--black-color); */
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  font-family: Tomorrow, sans-serif;
+  font-size: .85rem;
+  text-transform: uppercase;
+  color: var(--black-color);
+  clip-path: polygon(92% 0px, 100.00% 21.67%, 100% 100%, 8% 100%, 0% 75%, 0px 0px);
+}
+
+.btn__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: var(--yellow-color);
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+}
+
+
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+  
+}

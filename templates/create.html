@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Create Page </title>
+
+</head>  
+<body>  
+    <link rel="stylesheet" href="/static/style.css" />
+<h1 style="margin-bottom: 20px;background: var(--yellow-color);padding-top: 10px;padding-left: 10px;padding-bottom: 10px;padding-right: 10px;margin-left: -10px;margin-right: -10px;margin-top: -10px;font-style: inherit;"> CREATE PAGE </h1>
+<a href="https://nothing-but-scrap.herokuapp.com/" style="left: 0px;padding-top: 20px;padding-bottom: 20px;top: 5px;">Back to Main</a>  
+     
+    
+        <br>
+<br>
+<br>
+        <form action="/create_DT" method="POST"> 
+
+            <h2>Disease Type</h2>
+            <label>DiseaseType id : </label> 
+            <input name="DT_id">
+            
+            <label>DiseaseType description : </label> 
+            <input name="DT_description">
+            <button class="btn" type="submit">Send new DiseaseType</button> 
+        </form>  
+ 
+        <br>
+        <form action="/create_Country" method="POST"> 
+
+            <h2>Country</h2>
+            <label>Country name : </label> 
+            <input name="C_cname">
+
+            <label>Country population : </label> 
+            <input type="C_population" name="C_population">
+            <button class="btn" type="submit">Send new Country</button> 
+        </form>  
+ 
+        <br>
+        <form action="/create_Disease" method="POST"> 
+
+            <h2>Disease Code</h2>
+            <label>Disease code : </label> 
+            <input name="Disease_code">
+            
+            <label>Pathogen: </label> 
+            <input name="Disease_pathogen">
+            
+            <label>Description: </label> 
+            <input name="Disease_description">
+            
+            <label>Disease id : </label> 
+            <input name="Disease_id">
+            <button class="btn" type="submit">Send new Disease</button> 
+            
+        </form>  
+ 
+        <br>
+        <form action="/create_Discover" method="POST"> 
+
+            <h2>Discover</h2>
+            <label>Country : </label> 
+            <input name="Discover_cname">
+            
+            <label>Disease code : </label> 
+            <input name="Discover_disease_code">
+            
+            <label>Date : </label> 
+            <input type="date" name="Discover_date">
+            
+            <button class="btn" type="submit">Send new Discover</button> 
+        </form> 
+ 
+        <br>
+        <form action="/create_Users" method="POST"> 
+
+            <h2>Users</h2>
+            <label>Email : </label> 
+            <input type="email" name="U_email">
+
+            <label>Name : </label> 
+            <input name="U_name">
+
+            <label>Surname : </label> 
+            <input name="U_surname">
+
+            <label>Salary : </label> 
+            <input name="U_salary">
+
+            <label>Phone : </label> 
+            <input name="U_phone">
+
+            <label>Country : </label> 
+            <input name="U_cname">
+            
+            <button class="btn" type="submit">Send new User</button> 
+        </form>  
+ 
+        <br>
+        <form action="/create_PS" method="POST">
+            
+            <h2>Public Servant</h2> 
+            <label>Email : </label> 
+            <input type="email" name="PS_email">
+            
+            <label>Department : </label> 
+            <input name="PS_department">
+
+            <button class="btn" type="submit">Send new PublicServant</button> 
+        </form>  
+ 
+        <br>
+        <form action="/create_Doctor" method="POST"> 
+            
+            <h2>Doctor</h2>
+            <label>Email : </label> 
+            <input type="email" name="Doctor_email">
+            
+            <label>Degree : </label> 
+            <input name="Doctor_degree">
+
+            <button class="btn" type="submit">Send new Doctor</button> 
+        </form>  
+
+ 
+        <br>
+        <form action="/create_Record" method="POST"> 
+
+            <h2>Record</h2>
+            <label>Email : </label> 
+            <input type="email" name="Record_email">
+            
+            <label>Country : </label> 
+            <input name="Record_cname">
+
+            <label>Disease code : </label> 
+            <input name="Record_disease_code">
+
+            <label>Total Deaths : </label> 
+            <input name="Record_deaths">
+
+            <label>Total Patients : </label> 
+            <input name="Record_patients">
+
+            <button class="btn" type="submit">Send new Record</button> 
+        </form>
+
+        <br>
+   
+</body></html>

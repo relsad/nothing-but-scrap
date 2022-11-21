@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Update Page </title>
+
+</head>  
+<body>  
+    <link rel="stylesheet" href="/static/style.css" />
+    <h1 style="margin-bottom: 20px;background: var(--yellow-color);padding-top: 10px;padding-left: 10px;padding-bottom: 10px;padding-right: 10px;margin-left: -10px;margin-right: -10px;margin-top: -10px;font-style: inherit;"> UPDATE DATA ENTRY PAGE </h1>
+<a href="https://nothing-but-scrap.herokuapp.com/" style="left: 0px;padding-top: 20px;padding-bottom: 20px;top: 5px;">Back to Main</a>  
+     
+    
+        <br>
+<br>
+<br>
+        <form action="/update_DT" method="POST"> 
+
+            <h2>Disease Type</h2>
+            <label>DiseaseType id : </label> 
+            <input name="DT_id">
+            
+            <label>New diseaseType description : </label> 
+            <input name="DT_description">
+            <button class="btn" type="submit">Update description</button> 
+        </form>  
+ 
+        <br>
+        <form action="/update_Country" method="POST"> 
+
+            <h2>Country</h2>
+            <label>Country name : </label> 
+            <input name="C_cname">
+
+            <label>New Country population : </label> 
+            <input type="C_population" name="C_population">
+            <button class="btn" type="submit">Update population</button> 
+        </form>  
+ 
+        <br>
+        <form action="/update_Disease" method="POST"> 
+
+            <h2>Disease</h2>
+            <label>Disease code : </label> 
+            <input name="Disease_code">
+            
+            <label>Update : </label> 
+            <select name="Disease_col">
+                <option value="pathogen" selected="selected">Pathogen</option>
+                <option value="description">Description</option>
+                <option value="id">ID</option>
+            </select>
+
+            <label>New Value : </label> 
+            <input name="Disease_newVal">
+
+            <button class="btn" type="submit">Update Disease</button> 
+            
+        </form>  
+ 
+        <br>
+        <form action="/update_Discover" method="POST"> 
+
+            <h2>Discover</h2>
+            <label>Country : </label> 
+            <input name="Discover_cname">
+            
+            <label>Disease code : </label> 
+            <input name="Discover_disease_code">
+            
+            <label>New Date : </label> 
+            <input type="date" name="Discover_date">
+            
+            <button class="btn" type="submit">Update Discover</button> 
+        </form> 
+ 
+        <br>
+        <form action="/update_Users" method="POST"> 
+
+            <h2>Users</h2>
+            <label>Email : </label> 
+            <input type="email" name="U_email">
+
+            <select name="U_col">
+                <option value="name" selected="selected">Name</option>
+                <option value="surname">Surname</option>
+                <option value="salary">Salary</option>
+                <option value="phone">Phone</option>
+                <option value="cname">Country</option>
+            </select>
+
+            <label>New Value : </label> 
+            <input name="U_newVal">
+            
+            <button class="btn" type="submit">Update User</button> 
+        </form>  
+ 
+        <br>
+        <form action="/update_PS" method="POST"> 
+
+            <h2>Public Servant</h2>
+            <label>Email : </label> 
+            <input type="email" name="PS_email">
+            
+            <label>New Department : </label> 
+            <input name="PS_department">
+
+            <button class="btn" type="submit">Update PublicServant</button> 
+        </form>  
+ 
+        <br>
+        <form action="/update_Doctor" method="POST"> 
+
+            <h2>Doctor</h2>
+            <label>Email : </label> 
+            <input type="email" name="Doctor_email">
+            
+            <label>Degree : </label> 
+            <input name="Doctor_degree">
+
+            <button class="btn" type="submit">Update Doctor</button> 
+        </form>  
+
+ 
+        <br>
+        <form action="/update_Record" method="POST">
+            
+            <h2>Record</h2> 
+            <label>Email : </label> 
+            <input type="email" name="Record_email">
+            
+            <label>Country : </label> 
+            <input name="Record_cname">
+
+            <label>Disease code : </label> 
+            <input name="Record_disease_code">
+
+            <select name="Record_col">
+                <option value="deaths" selected="selected">Deaths</option>
+                <option value="patients">Patients</option>
+            </select>
+
+            <label>Updated Value : </label> 
+            <input name="Record_newVal">
+
+            <button class="btn" type="submit">Update Record</button> 
+        </form>
+
+        <br>
+   
+</body></html>
